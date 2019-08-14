@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/activity_color"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@id/ll_tucao_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="同学吐槽"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/ll_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5.0dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="21.0dip"
+                android:layout_height="21.0dip"
+                android:layout_marginRight="@dimen/screen_side"
+                android:background="@drawable/bt_share" />
+        </LinearLayout>
+    </RelativeLayout>
+
+<!--    <com.withustudy.koudaizikao.custom.pullrefersh.SwipyRefreshLayout
+        android:id="@id/swipyrefreshlayout_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        ptr:direction="top">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@id/lv_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:divider="@null"
+            android:scrollbars="none"
+            ptr:ptrDrawable="@drawable/pull_to_fresh"
+            ptr:ptrHeaderBackground="#ffffffff"
+            ptr:ptrHeaderTextColor="#ff999999" />
+    </com.withustudy.koudaizikao.custom.pullrefersh.SwipyRefreshLayout>-->
+
+    <LinearLayout
+        android:id="@id/layout_question_detail_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="13.0dip"
+        android:paddingBottom="13.0dip"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@id/et_publish"
+            android:layout_width="0.0dip"
+            android:layout_height="34.0dip"
+            android:layout_marginLeft="@dimen/screen_side"
+            android:layout_weight="1.0"
+            android:background="@drawable/edit_info_input"
+            android:ellipsize="end"
+            android:hint="@string/information_detail_discuss_content"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="true"
+            android:textColor="#ff666666"
+            android:textColorHint="#ffcccccc"
+            android:textSize="15.0sp" />
+
+        <Button
+            android:id="@id/btn_publish"
+            android:layout_width="47.0dip"
+            android:layout_height="33.0dip"
+            android:layout_marginLeft="@dimen/screen_side"
+            android:layout_marginRight="@dimen/screen_side"
+            android:background="@drawable/bt_bbs_publish_reply"
+            android:gravity="center"
+            android:text="@string/bbs_publish"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+</LinearLayout>

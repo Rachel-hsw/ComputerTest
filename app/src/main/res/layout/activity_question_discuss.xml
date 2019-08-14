@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_title"
+        android:background="@color/activity_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@id/button_question_discuss_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/screen_side"
+            android:background="@drawable/bt_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/question_detail_discuss"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/text_title" />
+
+        <TextView
+            android:id="@id/text_question_discuss_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+<!--    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@id/listview_question_discuss"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:divider="@null"
+        android:scrollbars="none"
+        ptr:ptrDrawable="@drawable/pull_to_fresh"
+        ptr:ptrHeaderBackground="#ffffffff"
+        ptr:ptrHeaderTextColor="#ff999999" />-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:background="#ffd3d3d3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@id/edit_question_discuss"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:layout_weight="1.0"
+            android:hint="@string/question_detail_discuss_content"
+            android:textSize="15.0sp" />
+
+        <Button
+            android:id="@id/button_question_discuss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:background="@null"
+            android:text="@string/information_detail_publish"
+            android:textColor="#ff000000"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+</LinearLayout>

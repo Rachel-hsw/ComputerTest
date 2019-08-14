@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_title"
+        android:background="@color/activity_color">
+
+        <Button
+            android:id="@id/button_about_back"
+            android:layout_width="40.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/screen_side"
+            android:background="@null"
+            android:drawableLeft="@drawable/bt_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/about_title"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/text_title" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="81.0dip"
+        android:layout_height="81.0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40.0dip"
+        android:background="@drawable/ic_launcher"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@id/text_about_vision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15.0dip"
+        android:layout_marginBottom="40.0dip"
+        android:textColor="#ff999999"
+        android:textSize="15.0sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="10.0dip"
+        android:background="#fff7f8f8"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@id/personalitemview_about_er"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="16.0dip"
+        android:paddingBottom="16.0dip">
+
+        <ImageView
+            android:layout_width="13.0dip"
+            android:layout_height="13.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/personal_er" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/screen_side"
+            android:text="@string/about_er"
+            android:textColor="#ff333333"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:layout_width="7.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="@dimen/screen_side"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/personal_arrow" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="#fff7f8f8"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@id/personalitemview_about_weibo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="16.0dip"
+        android:paddingBottom="16.0dip">
+
+        <ImageView
+            android:layout_width="13.0dip"
+            android:layout_height="10.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/personal_weibo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/screen_side"
+            android:text="@string/about_weibo"
+            android:textColor="#ff333333"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:layout_width="7.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="@dimen/screen_side"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/personal_arrow" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="#fff7f8f8"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@id/personalitemview_about_weixin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="16.0dip"
+        android:paddingBottom="16.0dip">
+
+        <ImageView
+            android:layout_width="13.0dip"
+            android:layout_height="11.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/personal_weixin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/screen_side"
+            android:text="@string/about_weixin"
+            android:textColor="#ff333333"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:paddingRight="@dimen/screen_side"
+            android:text="koudaizikao"
+            android:textColor="#ff999999"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:layout_width="7.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="@dimen/screen_side"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/personal_arrow" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="#fff7f8f8">
+
+        <TextView
+            android:id="@id/text_about_down3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20.0dip"
+            android:text="@string/about_down3"
+            android:textColor="#ffcccccc"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@id/text_about_down2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/text_about_down3"
+            android:layout_centerHorizontal="true"
+            android:text="@string/about_down2"
+            android:textColor="#ffcccccc"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@id/text_about_down1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/text_about_down2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10.0dip"
+            android:text="@string/about_down1"
+            android:textColor="@color/activity_color"
+            android:textSize="15.0sp" />
+    </RelativeLayout>
+</LinearLayout>

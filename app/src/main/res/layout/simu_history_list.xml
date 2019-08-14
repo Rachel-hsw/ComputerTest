@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.withustudy.koudaizikao"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/activity_color"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="15.0dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12.0dip"
+                android:background="@drawable/bt_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/activity_title"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="模考历史"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_title" />
+        </LinearLayout>
+    </RelativeLayout>
+
+<!--    <com.withustudy.koudaizikao.custom.ViewPagerIndicator
+        android:id="@id/id_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:background="#ffffffff"
+        android:orientation="horizontal"
+        zhy:item_count="2" />-->
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="3.0px"
+        android:background="#ffefefef" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/id_vp"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/white" />
+</LinearLayout>

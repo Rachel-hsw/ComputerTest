@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_title"
+        android:background="@color/activity_color">
+
+        <Button
+            android:id="@id/button_my_post_back"
+            android:layout_width="40.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/screen_side"
+            android:background="@null"
+            android:drawableLeft="@drawable/bt_back" />
+
+        <TextView
+            android:id="@id/text_my_post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/text_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+   <!--     <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@id/listview_my_post"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:scrollbars="none"
+            ptr:ptrDrawable="@drawable/pull_to_fresh"
+            ptr:ptrHeaderBackground="#ffffffff"
+            ptr:ptrHeaderTextColor="#ff999999" />-->
+
+        <LinearLayout
+            android:id="@id/layout_my_post_none"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="3.0" />
+
+            <ImageView
+                android:layout_width="155.0dip"
+                android:layout_height="155.0dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/load_nothing" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="还米有任何帖子哦。。。"
+                android:textColor="#ff999999"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="4.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
